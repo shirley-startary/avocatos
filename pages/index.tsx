@@ -15,7 +15,7 @@ const HomePage = () => {
             <Navbar/>
             <h1>Mis Aguacates</h1>
             <ul>
-                {productList.map(product => <li><a href={`/product/${product.id}`}>{product.name}</a></li> )}
+                {productList.map(product => <li key={`${product.id}`}><a href={`/product/${product.id}`}>{product.name}</a></li> )}
                 
             </ul>
         </div>
