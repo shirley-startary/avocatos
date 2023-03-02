@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@database":["database/db.ts"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
