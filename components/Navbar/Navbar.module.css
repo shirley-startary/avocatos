@@ -1,0 +1,22 @@
+.h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.span {
+    font-weight: bold;
+}
+
+.nav{
+    padding:.4rem;
+    background-color: #659828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
