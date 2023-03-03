@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Card from "@components/Card/Card";
 
 const HomePage = () => {
     const [productList, setProductList] = useState<TProduct[]>([]);
@@ -13,9 +13,15 @@ const HomePage = () => {
     return (
         <div>
             <h1>Mis Aguacates</h1>
-            <ul>
-                {productList.map(product => <li key={`${product.id}`}><a href={`/product/${product.id}`}>{product.name}</a></li> )}
-            </ul>
+            <section>
+                {productList.map(product => 
+                    <Card 
+                        name={product.name}
+                        key={`${product.id}`}
+                        href={`/product/${product.id}`}
+                    />
+                )}
+            </section>
         </div>
     )
 }
